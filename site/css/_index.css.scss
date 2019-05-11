@@ -1,27 +1,4 @@
-body{
-    margin: 0;
-}
 
-.wrapper{
-    min-height: 100vh;
-    grid-template-rows: 15vh auto;
-    display: grid;
-    background-color: gray;
-
-}
-
-header{
-    background-color: #95A6E8;
-    text-align: center;
-    font-family: Oswald;
-    margin: 0;
-}
-
-h1{
-    color: #EAF9FF;
-    font-size: 3rem;
-    /* margin: 0; */
-}
 .container{
     grid-template-columns: 50% 10% auto;
     grid-template-rows: 40vh 25vh 15vh auto auto;
