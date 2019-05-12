@@ -24,7 +24,9 @@ header .material-icons{
     border: none;
 }
 
-h1{
+header h1{
+    grid-column: 2/3;
+
     color: white;
     font-size: 2rem;
     font-family: Oswald;
@@ -49,6 +51,8 @@ p{
     grid-template-columns: 1fr;
 
     opacity: 0.7;
+
+    display: none;
 }
 
 .menu .index{
