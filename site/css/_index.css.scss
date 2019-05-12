@@ -1,61 +1,42 @@
-
-.container{
-    grid-template-columns: 50% 10% auto;
-    grid-template-rows: 40vh 25vh 15vh auto auto;
-    grid-gap: 10px;
-    background-color: #B1D6FF;
+.container_index{
     display: grid;
-    padding: 10%;
+    grid-template-columns: 2fr;
+    grid-template-rows: repeat(6, 1fr);
+
 }
 
-.pic{
-    background-color: #6E7A80;
-    grid-template-columns: 100%;
-    grid-template-rows: 70% 30%;
-    display: grid;
-
-    /* border-radius: 40%; */
-}
-.first{
-    grid-column: span 1;
-    grid-row: span 1;
-}
-.second{
-    grid-column: span 2;
-    grid-row: span 1;
-}
-.third{
-    grid-column: span 2;
-    grid-row: span 1;
-}
-.fourth{
-    grid-column: span 1;
-    grid-row: span 2;
-}
-.five{
-    grid-column: span 2;
-    grid-row: span 1;
+article{
+    background-color: white;
+    grid-column: 1/3;
+    grid-row: 1/3;
 }
 
-.picture{
-    background-color: #6E7A80;
-    grid-row: span 1;
+.box{
+    border: 5% groove white;
 }
-.text{
-    background-color: #EAF9FF;
-    grid-row: span 1;
-    /* padding: 15%; */
-    text-align: center;
-    text-justify: newspaper;
-    margin: 0;
 
-    /* border-radius: 40%; */
-    /* border: 3px; */
+.square{
+    grid-column: 1/2;
+    grid-row: 2/4;
+
+    background-color: red;
 }
-h3{
-    color: black;
-    margin: 0;
-    font-family: Nanum Pen script;
-    text-align: center;
-    text-justify: newspaper;
+
+.little{
+    grid-column: 1/2;
+    grid-row: 4/5;
+
+    background-color: aquamarine;
+}
+
+.long{
+    grid-column: 2/3;
+    grid-row: 2/5;
+    background-color: bisque;
+}
+
+.thicc{
+    grid-column: 1/3;
+    grid-row: 5/6;
+    background-color: black;
 }
