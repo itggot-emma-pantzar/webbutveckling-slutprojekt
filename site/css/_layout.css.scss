@@ -10,6 +10,16 @@ body{
 
 }
 
+h1{
+    color: #EAF9FF;
+    font-size: 3rem;
+    /* margin: 0; */
+}
+
+// 
+//  Header och meny
+// 
+
 header{
     background-color: #95A6E8;
     text-align: center;
@@ -17,15 +27,10 @@ header{
     margin: 0;
 }
 
-h1{
-    color: #EAF9FF;
-    font-size: 3rem;
-    /* margin: 0; */
-}
-
 header .menu{
     background-color: #95A6E8;
     position: fixed;
+    // display: none;
     top: 30%;
     height: 70vh;
     width: 33.5em;
@@ -38,6 +43,10 @@ header .menu{
 .menu:hover{
     left: 1;
     right: 0;
+}
+
+.hidden{
+    display: none;
 }
 
 header ul a{
@@ -68,8 +77,6 @@ header .menu.visible{
 header .material-icons{
     color: white;
     display: block;
-    // grid-column: 6/7;
-    // grid-row: 1/2;
     border: none;
 }
 
@@ -89,4 +96,3 @@ header .material-icons{
     grid-row: 4/5;
     grid-column: 1/2;
 }
-

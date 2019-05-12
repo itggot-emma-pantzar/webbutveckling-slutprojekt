@@ -9,3 +9,11 @@ function menu() {
     menu.classList.toggle("hidden")
     menu.classList.toggle("visible")
 }
+
+function prova(event) {
+    // console.log("Hello")
+
+    let menu = document.querySelector(".menu")
+    menu.classList.toggle("hidden")
+    // menu.classList.toggle("visible")
+}
