@@ -2,32 +2,21 @@ body{
     margin: 0;
     min-height: 100vh;
     max-width: 100vh;
+   
+
 }
 
 .wrapper{
     background-color: #f1f1f1;
+    grid-template-rows: 20vh auto 10vh;
+    width: 100vw;
 }
 
-header{
-    margin: 0;
-    height: 15vh;
-    background-color: pink;
 
-    /* align-items: center; */
-    /* justify-content: center; */
-
-    position: sticky;
-}
-
-header h1{
-    font-family: 'Courier New', Courier, monospace;
-
-    margin-top: 0;
-}
- 
 .container{
-    margin: 2%;
-    height: 70%;
+    margin: 2vh;
+    height: 75vh;
+    grid-gap: 20%;
 }
 
 .c_index{
@@ -36,15 +25,23 @@ header h1{
     grid-template-areas: 
     "first first"
     "small small" 
-    "long long";
-
+    "long long";    
+    
     grid-gap:5%;
     display:grid;
+
+    justify-content: center;
+    align-items: center;
 }
 
 .little_container{
     grid-area: long;
     flex-direction: row;
+    
+    display: flex;
+    
+    width: 100%;
+    HEIGHT: 100%;  
 }
 
 .little_container .box{
@@ -54,18 +51,48 @@ header h1{
 .box{
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 50px; */
 }
-/* 
-.box:first-of-type{
+
+.first_box{
+    grid-area: first;
+}
+.small_box{
+    grid-area: small;
+}
+.long_box{
+    background-color: aqua;
+}
+
+ header{
+    margin: 0;
+    height: 15vh;
+    width: 100vw;
+    background-color: pink;
+}
+
+ header h1{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+/* .box:first-of-type{
     grid-area: first;
     background-color: red;
 }
 .box:nth-of-type(2){
     grid-area: small;
-} */
+}  */
 
 footer{
     background-color: cornflowerblue;
+
+    width: 100vw;
+    height: 10vh;
+    position: absolute;
+    bottom: 0;
 }
 
 
