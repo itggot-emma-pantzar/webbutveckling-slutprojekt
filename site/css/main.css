@@ -2,8 +2,6 @@ body{
     margin: 0;
     min-height: 100vh;
     max-width: 100vh;
-   
-
 }
 
 .wrapper{
@@ -18,7 +16,14 @@ body{
     height: 75vh;
     grid-gap: 20%;
 }
+.c_more{
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1;
+    display: grid;
 
+    justify-content: center;
+    align-items: center;
+}
 .c_index{
     grid-template-rows: 30% 20% 50%;
     grid-template-columns: 2fr;
@@ -44,17 +49,32 @@ body{
     HEIGHT: 100%;  
 }
 
-.little_container .box{
+.little_container .box_picture{
     grid-column: span 1;
 }
 
-.box{
+.box_picture{
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     /* margin: 50px; */
+}
+
+.circle_picture{
+    width: 100%;
+    grid-row: span 1;
+    grid-column: span 1;
+    border-radius: 50%;
+    border: 1px;
+}
+
+.first_circle{
+    background-image: url('imgs/flower_1.jpg')
+}
+.second_circle{
+    background-image: url('imgs/flower_2.jpg')
 }
 
 .first_box{
@@ -73,11 +93,11 @@ body{
     width: 100vw;
     background-color: pink;
 }
-
+/* 
  header h1{
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
-}
+} */
 /* .box:first-of-type{
     grid-area: first;
     background-color: red;
@@ -93,6 +113,11 @@ footer{
     height: 10vh;
     position: absolute;
     bottom: 0;
+}
+
+h1, h2, p{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
 }
 
 
