@@ -9,7 +9,13 @@ body{
     grid-template-rows: 20vh auto 10vh;
     width: 100vw;
 }
+/* 
+main{
+    align-items: center;
+    justify-content: center;
 
+    display: flex;
+} */
 
 .container{
     margin: 2vh;
@@ -62,29 +68,48 @@ body{
     /* margin: 50px; */
 }
 
-.circle_picture{
+.box_picture, .from_more{
     width: 100%;
     grid-row: span 1;
     grid-column: span 1;
     border-radius: 50%;
     border: 1px;
 }
+/* 
+.box_picture, h2, .from_more {
+    background-color: red;
+} */
 
-.first_circle{
+.box_picture, .from_more .first{
     background-image: url('imgs/flower_1.jpg')
 }
-.second_circle{
-    background-image: url('imgs/flower_2.jpg')
+.box_picture, .from_more .second{
+    background-image: url('imgs/rose_1.jpg')
 }
 
-.first_box{
+
+/* .box_picture + .first{
     grid-area: first;
-}
-.small_box{
+    background-color: blue;
+} */
+.box_picture + .small{
     grid-area: small;
+    background-color: black;
+    /* background-image: url('imgs/flower_1.jpg') */
 }
-.long_box{
+/* .box_picture :nth-of-type(1){
+    background-color: blue;
+} */
+.box_picture + .long{
     background-color: aqua;
+}
+
+.long_one {
+    background-color: red;
+}
+
+article{
+    max-width: 100%;
 }
 
  header{
@@ -93,25 +118,14 @@ body{
     width: 100vw;
     background-color: pink;
 }
-/* 
- header h1{
-    font-family: 'Courier New', Courier, monospace;
-    margin: 0;
-} */
-/* .box:first-of-type{
-    grid-area: first;
-    background-color: red;
-}
-.box:nth-of-type(2){
-    grid-area: small;
-}  */
+
 
 footer{
     background-color: cornflowerblue;
 
     width: 100vw;
     height: 10vh;
-    position: absolute;
+    position: fixed;
     bottom: 0;
 }
 
